@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+       
+        
+    </body>
+</html>
+body {
+    background-color:#FFCA00;
+}
+#head {
+    width: 300px;
+    height:300px;
+    border-radius:50%;
+    background-color:#997564;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#eyeright {
+    width:50px;
+    height:50px;
+    background-color:transparent;
+    border-radius:50%;
+    position:absolute;
+    top:100px;
+    right:50px;
+}
+#righteyedot {
+    width:20px;
+    height:20px;
+    background-color:#000000;
+    border-radius:50%;
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+#eyeleft{
+    width:50px;
+    height:50px;
+    background-color:transparent;
+    border-radius:50%;
+    position:absolute;
+    top:100px;
+    left:50px;
+}
+#lefteyedot {
+    width:20px;
+    height:20px;
+    background-color:#000000;
+    border-radius:50%;
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+#leftear {
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color:#997564;
+}
+#leftearris {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color:#895849;
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+#rightearris {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color:#895849;
+    position:absolute;
+    top:20px;
+    left:235px;
+}
+#rightear {
+    position:absolute;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    left:200px;
+    top:0px;
+    background-color:#997564;
+}
+#snout {
+    background-color:#FFE9E6;
+    height:45px;
+    width:80px;
+    border-radius:50%;
+    position:absolute;
+    top:155px;
+    right:110px;
+}
+#nose {
+    height:20px;
+    width: 30px;
+    background-color:#000000;
+    border-radius:50%;
+    position:absolute;
+    top:167px;
+    right:135px;
+}
+
+<!-- Created by ‎Ashwin Maurya -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cow</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="head">
+            <div id="horn"></div>
+            <div id="horn1"></div>
+            
+            <div id="eye">
+                   <div id="eyeball"></div>
+               </div>
+               <div id="eye1">
+                   <div id="eyeball1"></div>
+               </div>
+                <div id="mouth">
+                    <div id="nose"></div>
+                    <div id="nose1"></div>
+                    <div id="smile"></div>
+                </div>
+            </div>
+            
+            
+        </div>
+       
+    </body>
+</html>
+
+
+body {
+    margin:0;
+}
+#container{
+    height:581px;
+    width:360px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center ;
+    position:relative ;
+    overflow:hidden ;
+    background-color:none;
+}
+#head{
+    width: 150px;
+    height: 200px;
+    background-color:#ffeae0;
+    position:absolute;
+    left:110px;
+    top:80px;
+    z-index:999;
+    border-radius:84% 81% 60% 49% / 89% 84% 30% 30% ;
+    animation:shake 0.5s infinite ;
+}
+#head:after{
+    content:"";
+    position:absolute;
+    width:20px;
+    height:110px;
+    border-radius:50%;
+    background-color:#ffeae0;
+    top:65px;
+    left:-3px;
+    transform:rotate(3deg);
+}
+#head:before{
+    content:"";
+    position:absolute;
+    width:20px;
+    height:110px;
+    border-radius:50%;
+    background-color:#ffeae0;
+    top:65px;
+    right:-3px;
+    transform:rotate(-3deg);
+}
+#mouth{
+     width: 157px;
+     height: 60px;
+     background-color:#fcaeae;
+     border-bottom-left-radius:45px;
+     border-bottom-right-radius:48px; 
+     border-bottom: 0;
+     position:absolute;
+     left:-3.5px;
+     top:140px;
+     z-index:99;
+}
+#mouth:after{
+    content:"";
+    position:absolute;
+    width:157px;
+    height:40px;
+    background-color:#fcaeae;
+    border-radius:50%;
+    left:0;
+    bottom:40px;
+    transform:rotate(-.5deg);
+}
+#mouth:before{
+    content:"";
+    position:absolute;
+    width:100px;
+    height:20px;
+    background-color:#fcaeae;
+    border-radius:50%;
+    left:25px;
+    top:43.8px;
+    transform:rotate(1deg);
+}
+#eye{
+    height:23px;
+    width:18px;
+    background-color:black;
+    border-radius:50%;
+    position:absolute;
+    left:47px;
+    top:75px;
+}
+#eye1{
+    height:23px;
+    width:18px;
+    background-color:black;
+    border-radius:50%;
+    position:absolute;
+    right:47px;
+    top:75px;
+}
+#eyeball{
+    height:6.5px;
+    width:6px;
+    background-color:white;
+    border-radius:50%;
+    position:absolute;
+    top:5px;
+    right:2px;
+}
+#eyeball1{
+    height:6.5px;
+    width:6px;
+    background-color:white;
+    border-radius:50%;
+    position:absolute;
+    top:5px;
+    left:2px;
+}
+#nose{
+    height:15px;
+    width:25px;
+    background-color:#c26e6e;
+    border-radius:50%;
+    position:absolute;
+    top:2px;
+    left:25px;
+    z-index:999;
+    transform:rotate(10deg);
+}
+#nose1{
+    height:15px;
+    width:25px;
+    background-color:#c26e6e;
+    border-radius:50%;
+    position:absolute;
+    top:2px;
+    right:25px;
+    z-index:999;
+    transform:rotate(-10deg);
+}
+#smile{
+    height: 20px;
+    width: 20px;
+    border: 5px solid transparent;
+    border-top: 5px solid #c26e6e;
+    border-radius: 50%;
+    position: absolute;
+    top:20px;
+    right:40px;
+    z-index:999;
+    transform:rotate(130deg);
+}
+#smile:before{
+     content:"";
+     width: 5px;
+     height: 5px;
+     background-color:#c26e6e;
+     border-top-left-radius:5px;
+     border-top-right-radius:5px; 
+     border-bottom: 0;
+     position:absolute;
+     top:-1px;
+     left:-2px;
+     z-index:9999;
+     transform:rotate(-130deg);
+}
+#smile:after{
+     content:"";
+     width: 5px;
+     height: 5px;
+     background-color:#c26e6e;
+     border-top-left-radius:5px;
+     border-top-right-radius:5px; 
+     border-bottom: 0;
+     position:absolute;
+     top:-.5px;
+     right:-2px;
+     z-index:9999;
+     transform:rotate(-220deg);
+}
+
+#horn{
+    height:15px;  
+    width:15px;
+    background-color:#ffaf03;
+    border-radius:52% 48% 0% 71% / 100% 100% 0% 0% ;
+    position:absolute ;
+    left:30px;
+    top:-2px;
+    transform:rotate(-35deg);
+} 
+#horn1{
+    height:15px;  
+    width:15px;
+    background-color:#ffaf03;
+    border-radius:52% 48% 0% 71% / 100% 100% 0% 0%   ;
+    position:absolute ;
+    right:30px;
+    top:-3px;
+    transform:rotate(34deg);
+} 
+#ear{
+    transform:rotate(8deg);
+    z-index:-111;
+    position:absolute;
+    top:82px;
+    left:82px;
+}
+#ear:before{
+      content:"";
+      width: 50px;
+      height: 70px;
+      background:#fcaeae;
+      border-radius: 100px 0px;
+      border:6px solid #4c4c4d;
+      position:absolute;
+      transform:rotateX(60deg);
+      z-index:-1;
+}
+#ear1{
+    transform:rotate(45deg);
+    z-index:-111;
+    position:absolute;
+    top:77px;
+    left:270px;
+}
+#ear1:before{
+      content:"";
+      width: 50px;
+      height: 70px;
+      background:#fcaeae;
+      border-radius: 100px 0px;
+      border:6px solid #4c4c4d;
+      position:absolute;
+      transform:rotateX(60deg);
+      z-index:0;
+}
+#body{
+    height:140px;
+    width:140px;
+    border-radius:50%;
+    background-color:#ffeae0;
+    position:relative ;
+    top:40px;
+}
+
+
+@keyframes shake {
+  0% { 
+  transform: translate(1px, 1px) rotate(0deg);
+   }
+  10% { 
+  transform: translate(-1px, -2px) rotate(-1deg); 
+  }
+  20% {
+   transform: translate(-3px, 0px) rotate(1deg); 
+   }
+  30% { 
+  transform: translate(3px, 2px) rotate(0deg);
+   }
+  40% { 
+  transform: translate(1px, -1px) rotate(1deg); 
+  }
+  50% { 
+  transform: translate(-1px, 2px) rotate(-1deg); 
+  }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+ }
+
+
+
